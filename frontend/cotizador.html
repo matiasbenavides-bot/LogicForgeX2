@@ -865,17 +865,17 @@
     const msg = encodeURIComponent(
 `Hola, acabo de usar el cotizador de LogicForgeX 👋
 
-📋 *Detalle de mi cotización:*
+ *Detalle de mi cotización:*
 • Tipo de proyecto: ${b.label}
 • Complejidad: ${complexityLabel[S.complexity]}
 • Extras seleccionados: ${extrasList}
 • Páginas adicionales: ${pagesText}
 
-💰 *Estimado de desarrollo (neto):* ${fmtRange(totalNetoMin, totalNetoMax)} CLP
-🧾 *IVA (19%):* ${fmtRange(ivaMin, ivaMax)} CLP
-✅ *Total con IVA:* ${fmtRange(totalMin, totalMax)} CLP
+ *Estimado de desarrollo (neto):* ${fmtRange(totalNetoMin, totalNetoMax)} CLP
+ *IVA (19%):* ${fmtRange(ivaMin, ivaMax)} CLP
+ *Total con IVA:* ${fmtRange(totalMin, totalMax)} CLP
 
-📅 *Mensualidad:* ${fmt(monthlyNeto)} + IVA (${fmt(monthlyTotal)} aprox.)
+ *Mensualidad:* ${fmt(monthlyNeto)} + IVA (${fmt(monthlyTotal)} aprox.)
 Incluye: Hosting + Server Backend + Base de datos
 
 Me gustaría avanzar con este proyecto. ¿Podemos coordinar?`
