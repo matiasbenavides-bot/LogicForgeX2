@@ -675,7 +675,6 @@
   </div>
 
 </div>
-
 <script>
   const S = { type:null, complexity:null, extras:[], pages:0 };
 
@@ -725,7 +724,6 @@
         { id:'notif',     name:'🔔 Notificaciones (email/SMS)',desc:'+$60.000 – $120.000', addMin:60000,  addMax:120000 },
         { id:'factura',   name:'🧾 Facturación electrónica',  desc:'+$120.000 – $250.000', addMin:120000, addMax:250000 },
         { id:'crm',       name:'🤝 Módulo CRM',               desc:'+$150.000 – $300.000', addMin:150000, addMax:300000 },
-        { id:'app',       name:'📱 App móvil básica',         desc:'+$300.000 – $600.000', addMin:300000, addMax:600000 },
         { id:'auto',      name:'🤖 Automatización de flujos', desc:'+$80.000 – $200.000',  addMin:80000,  addMax:200000 },
       ]
     }
@@ -853,8 +851,8 @@
     document.getElementById('rIVA').textContent     = fmtRange(ivaMin, ivaMax);
     document.getElementById('rTotal').textContent   = fmtRange(totalMin, totalMax);
 
-    document.getElementById('rMonthly').textContent    = `${fmt(monthlyNeto)} + IVA`;
-    document.getElementById('rMonthlyIva').textContent = `${fmt(monthlyTotal)} total aprox.`;
+ document.getElementById('rMonthly').textContent = `${fmt(monthlyTotal)} mensual`;
+document.getElementById('rMonthlyIva').textContent = `IVA incluido`;
 
     // WhatsApp link — número fijo LogicForgeX
     const extrasList = S.extras.length > 0
@@ -926,5 +924,6 @@ Me gustaría avanzar con este proyecto. ¿Podemos coordinar?`
 
   updateSlider();
 </script>
+
 </body>
 </html>
