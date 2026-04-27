@@ -834,7 +834,7 @@
     const totalMax = totalNetoMax + ivaMax;
 
     const monthlyNeto = b.monthly;
-    const monthlyTotal = Math.round(monthlyNeto * (1 + IVA));
+   const monthlyTotal = monthlyNeto;
     // Fill UI
     document.getElementById('rTitle').textContent = b.label;
     document.getElementById('rSubtitle').textContent =
